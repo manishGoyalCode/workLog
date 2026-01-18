@@ -1,0 +1,124 @@
+.standup {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.standup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.standup__header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.standup__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.standup__date {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.standup__empty {
+    padding: 4rem 2rem;
+}
+
+.standup__empty-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.standup__empty-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.standup__empty-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.standup__empty-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin: 0 0 1rem 0;
+    max-width: 320px;
+}
+
+.standup__loading {
+    padding: 4rem 2rem;
+}
+
+.standup__loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-text-muted);
+}
+
+.standup__loading-spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.standup__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.standup__section {
+    padding: 1.25rem 1.5rem;
+}
+
+.standup__actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+    .standup {
+        padding: 1.5rem 1rem;
+    }
+
+    .standup__header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .standup__header .btn {
+        width: 100%;
+    }
+
+    .standup__actions .btn {
+        width: 100%;
+    }
+}

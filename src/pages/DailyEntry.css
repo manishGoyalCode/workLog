@@ -1,0 +1,101 @@
+.daily-entry {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.daily-entry__loading {
+    padding: 3rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.daily-entry__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.daily-entry__header .btn {
+    align-self: flex-start;
+}
+
+.daily-entry__date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.daily-entry__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.daily-entry__date-value {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+}
+
+.daily-entry__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.daily-entry__card {
+    padding: 1.5rem;
+}
+
+.daily-entry__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.daily-entry__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daily-entry__actions-left {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.daily-entry__actions-right {
+    display: flex;
+    gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .daily-entry {
+        padding: 1.5rem 1rem;
+    }
+
+    .daily-entry__card {
+        padding: 1rem;
+    }
+
+    .daily-entry__actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .daily-entry__actions-left,
+    .daily-entry__actions-right {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .daily-entry__actions-right {
+        flex-direction: column;
+    }
+
+    .daily-entry__actions-right .btn {
+        width: 100%;
+    }
+}
