@@ -4,7 +4,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button, TextArea, Input, LinksManager, Card } from '../components';
+import { Button, TextArea, LinksManager, Card } from '../components';
 import { useDailyLog } from '../hooks/useData';
 import { formatDate, toDateString } from '../utils/dateUtils';
 import type { Link } from '../domain/types';

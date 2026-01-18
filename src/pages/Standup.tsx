@@ -9,7 +9,7 @@ import { formatDate, toDateString } from '../utils/dateUtils';
 import './Standup.css';
 
 export const Standup: React.FC = () => {
-    const { summary, setSummary, loading, generate } = useStandupSummary();
+    const { summary, loading, generate } = useStandupSummary();
     const [copied, setCopied] = useState(false);
 
     // Editable fields

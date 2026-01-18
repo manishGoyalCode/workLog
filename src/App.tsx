@@ -2,7 +2,7 @@
  * Main App Component
  */
 
-import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components';
 import { Dashboard, DailyEntry, Timeline, Standup, Weekly, Review } from './pages';

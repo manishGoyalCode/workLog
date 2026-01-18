@@ -195,7 +195,7 @@ class LocalSummaryService implements SummaryService {
         const technicalKeywords = ['refactored', 'optimized', 'debugged', 'investigated', 'analyzed', 'migrated', 'upgraded'];
 
         logs.forEach(log => {
-            const text = log.workDescription.toLowerCase();
+
             const points = this.extractKeyPoints(log.workDescription);
 
             points.forEach(point => {
