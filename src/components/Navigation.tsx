@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 import './Navigation.css';
 
 export const Navigation: React.FC = () => {
     const location = useLocation();
+    const { theme, toggleTheme } = useTheme();
 
     // Helper to check if link is active
     const isActive = (path: string) => location.pathname === path;
@@ -61,6 +63,19 @@ export const Navigation: React.FC = () => {
                     </Link>
                 </div>
             </nav>
+
+            <div className="sidebar__footer">
+                <button
+                    className="sidebar__theme-toggle"
+                    onClick={toggleTheme}
+                    title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                >
+                    <span className="sidebar__icon">
+                        {theme === 'light' ? '🌙' : '☀️'}
+                    </span>
+                    {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+                </button>
+            </div>
         </aside>
     );
 };
